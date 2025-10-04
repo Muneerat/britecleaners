@@ -9,7 +9,7 @@ export default function Require() {
   return (
     <div className="max-w-6xl py-16 px-10 mx-auto text-[#6b6b78]"  data-aos="fade-up" >
     
-      <div className="flex md:flex-row flex-col justify-between gap-10">
+      <div className="flex md:flex-row flex-col justify-between gap-18">
         
         <div className="md:w-1/2">
           <h1 className=" mb-2 font-medium text-2xl">
@@ -18,7 +18,7 @@ export default function Require() {
           <p className="pb-4">
          Contact us today to book a cleaner in Manchester and Bolton.
           </p>
-          <div className="flex flex-col  text-[#2c39b9] font-semibold text-lg">
+          <div className="flex flex-col  text-[#2c39b9] font-semibold text-lg pt-4">
               {/* <a className="" href="mailto:info@britecleaners.co.uk">
             info@britecleaners.co.uk
           </a>
@@ -52,7 +52,7 @@ export default function Require() {
                 </p>
               </div>
             ))}
-            <Image src={advise} alt="" className="rounded-lg" />
+            <Image src={advise} alt="" className="rounded-lg my-16" />
           </div>
         </div>
       </div>

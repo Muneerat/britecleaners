@@ -29,9 +29,9 @@ export async function SendEmail(formData: FormData): Promise<SendEmailResult> {
 
   try {
     const { data, error } = await resend.emails.send({
-       from: 'Acme <info@britecleaners.co.uk>',
-    //   from: `Britecleaners <info@britecleaners.co.uk>`, 
-      to: ['oladipomunirat@gmail.com'],
+      //  from: 'Acme <info@britecleaners.co.uk>',
+      from: `Britecleaners <info@britecleaners.co.uk>`, 
+      to: ['info@britecleaners.co.uk'],
       subject: `New Enquiry: ${enquiryType} from ${fullname}`,
       replyTo: email, 
       react: EmailTemplate({ 
