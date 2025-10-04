@@ -1,8 +1,9 @@
-import { services, whyUs } from "@/app/lib/data";
+import { whyUs } from "@/app/lib/data";
 import { Check } from "lucide-react";
 import React from "react";
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
+import Form from "./from";
+import Image from "next/image";
+import advise from "@/../public/assets/advice.jpg"
 
 export default function Require() {
   return (
@@ -18,10 +19,11 @@ export default function Require() {
          Contact us today to book a cleaner in Manchester and Bolton.
           </p>
           <div className="flex flex-col  text-[#2c39b9] font-semibold text-lg">
-              <a className="" href="mailto:info@britecleaners.co.uk">
+              {/* <a className="" href="mailto:info@britecleaners.co.uk">
             info@britecleaners.co.uk
           </a>
-           <a href="tel:+447424524151">07424 524151</a>
+           <a href="tel:+447424524151">07424 524151</a> */}
+           <Form />
             {/* <Input id="fullname" placeholder="Enter your email" className="w-8/12 h-12" />
           <Button
             type="submit"
@@ -50,6 +52,7 @@ export default function Require() {
                 </p>
               </div>
             ))}
+            <Image src={advise} alt="" className="rounded-lg" />
           </div>
         </div>
       </div>

@@ -126,9 +126,9 @@ export default function Form() {
   }
 
   return (
-    <Card className="shadow-lg h-full w-full">
+    <Card className="shadow-lg h-full w-full text-[#6b6b78]">
       <CardHeader>
-        <CardTitle>Enquire about our services</CardTitle>
+        <CardTitle className="text-[#6b6b78]">Enquire about our services</CardTitle>
         <CardDescription>
           Simply leave your name and a form of contact, and we&#39;ll get back to
           you as soon as possible.
